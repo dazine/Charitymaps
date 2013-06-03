@@ -83,7 +83,7 @@ public class EditProductActivity extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(EditProductActivity.this);
-			pDialog.setMessage("Loading product details. Please wait...");
+			pDialog.setMessage("Loading, please wait...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
