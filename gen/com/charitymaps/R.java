@@ -314,6 +314,7 @@ containing a value of this type.
         public static final int satellite_map=0x7f06001a;
         public static final int select_map=0x7f060018;
         public static final int terrain_map=0x7f06001b;
+        public static final int test=0x7f060027;
     }
     public static final class style {
         /** 
