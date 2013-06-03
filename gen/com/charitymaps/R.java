@@ -288,17 +288,17 @@ containing a value of this type.
          */
         public static final int common_signin_button_text_long=0x7f06000e;
         public static final int hello_world=0x7f060017;
-        public static final int home_app=0x7f060020;
-        public static final int home_button=0x7f060023;
-        public static final int home_groep=0x7f06001e;
-        public static final int home_naam=0x7f06001f;
-        public static final int home_project=0x7f060022;
-        public static final int home_versie=0x7f060021;
+        public static final int home_app=0x7f060021;
+        public static final int home_button=0x7f060024;
+        public static final int home_groep=0x7f06001f;
+        public static final int home_naam=0x7f060020;
+        public static final int home_project=0x7f060023;
+        public static final int home_versie=0x7f060022;
         public static final int hybrid_map=0x7f06001c;
-        public static final int img_line=0x7f06001d;
-        public static final int intro_intro=0x7f060025;
-        public static final int intro_maps=0x7f060026;
-        public static final int intro_welkom=0x7f060024;
+        public static final int img_line=0x7f06001e;
+        public static final int intro_intro=0x7f060026;
+        public static final int intro_maps=0x7f060027;
+        public static final int intro_welkom=0x7f060025;
         /**  Location client code resources (prefix with location_client) 
 
         Begin strings for location.reporting
@@ -314,6 +314,7 @@ containing a value of this type.
         public static final int satellite_map=0x7f06001a;
         public static final int select_map=0x7f060018;
         public static final int terrain_map=0x7f06001b;
+        public static final int test=0x7f06001d;
     }
     public static final class style {
         /** 
