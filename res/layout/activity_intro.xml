@@ -59,4 +59,12 @@
         android:textColor="@color/blue"
         android:textSize="25sp" />
 
+    <Button
+        android:id="@+id/button_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_maps"
+        android:background="@color/blue"
+        android:text="@string/intro_database" />
+
 </RelativeLayout>
