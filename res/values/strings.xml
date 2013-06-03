@@ -27,5 +27,10 @@
     <string name="intro_welkom">Welkom!</string>
     <string name="intro_intro">Welkom bij de App van de goede doelen.</string>
     <string name="intro_maps">Ga naar de Maps</string>
+    <string name="intro_overzicht">Ga naar het overzicht</string>
+    
+    <string name="titel">Titel</string>
+    <string name="locatie">Locatie</string>
+    <string name="beschrijving">Beschrijving</string>
 
 </resources>
