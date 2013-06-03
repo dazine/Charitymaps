@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/map_types"
+          android:icon="@drawable/common_signin_btn_icon_pressed_dark"
+          android:title="@string/select_map"
+          android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/normal_map"
+                  android:title="@string/normal_map"/>
+            <item android:id="@+id/satellite_map"
+                  android:title="@string/satellite_map"/>
+            <item android:id="@+id/terrain_map"
+                  android:title="@string/terrain_map"/>
+            <item android:id="@+id/hybrid_map"
+                  android:title="@string/hybrid_map"/>
+        </menu>
+    </item>
+</menu>
