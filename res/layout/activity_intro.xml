@@ -26,12 +26,12 @@
         android:layout_above="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/white"
-        android:text="@string/home_project" />
-    
+        android:text="@string/home_project"
+        android:textColor="@color/white" />
+
     <Button
         android:id="@+id/button_maps"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/button_maps"
-        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerHorizontal="true"
         android:text="@string/intro_intro"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -57,13 +57,16 @@
         android:layout_centerHorizontal="true"
         android:text="@string/intro_welkom"
         android:textColor="@color/blue"
-        android:textSize="25sp" />
+        android:textSize="32sp" />
 
     <Button
         android:id="@+id/button_database"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
         android:layout_below="@+id/button_maps"
+        android:layout_marginTop="5dp"
         android:background="@color/blue"
         android:text="@string/intro_database" />
 
