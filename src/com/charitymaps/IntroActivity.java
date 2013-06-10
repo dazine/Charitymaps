@@ -10,6 +10,7 @@ public class IntroActivity extends Activity implements View.OnClickListener {
 
 	Button button_maps;
 	Button button_database;
+	Button button_overzicht;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,9 @@ public class IntroActivity extends Activity implements View.OnClickListener {
         
         button_database = (Button) findViewById(R.id.button_database);
         button_database.setOnClickListener(this);
+        
+        button_overzicht = (Button) findViewById(R.id.button_overzicht);
+        button_overzicht.setOnClickListener(this);
 	}
 
 	@Override
@@ -29,7 +33,10 @@ public class IntroActivity extends Activity implements View.OnClickListener {
     		startActivity(new Intent("com.charitymaps.MainActivity"));
     		break;
     	case R.id.button_database:
-    		startActivity(new Intent("com.charitymaps.MainScreenActivity"));
+    		startActivity(new Intent(this, AllProductsActivity.class));
+    		break;
+    	case R.id.button_overzicht:
+    		startActivity(new Intent(this, Overzicht.class));
     		break;
     	}
     }
