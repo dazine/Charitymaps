@@ -9,49 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Head" >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="@string/home_naam"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="@string/home_app"
-            android:textColor="@color/grey"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="93dp"
-            android:text="@string/home_groep"
-            android:textColor="@color/blue"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-    <Button
+    <!-- <Button
         android:id="@+id/button_enter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@color/blue"
-        android:text="@string/home_button" />
+        android:text="@string/home_button" /> -->
 
     <TextView
         android:id="@+id/textView5"
@@ -74,13 +39,65 @@
         android:src="@drawable/line" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button_enter"
-        android:layout_alignRight="@+id/button_enter"
+        android:layout_alignBottom="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="49dp"
+        android:gravity="center"
+        android:text="@string/loading" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minHeight="120dp"
+        android:minWidth="120dp" />
+
+    <TextView
+        android:id="@+id/txtvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginTop="32dp"
         android:text="@string/home_versie"
         android:textColor="@color/red"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtvGoedDoel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/txtvVersion"
+        android:text="@string/home_naam"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtvAPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtvGoedDoel"
+        android:layout_alignBottom="@+id/txtvGoedDoel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_app"
+        android:textColor="@color/grey"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvGoedDoel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_groep"
+        android:textColor="@color/blue"
+        android:textSize="25sp" />
 
 </RelativeLayout>
