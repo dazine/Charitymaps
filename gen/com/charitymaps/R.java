@@ -192,61 +192,39 @@ containing a value of this type.
         public static final int map_menu=0x7f02001c;
     }
     public static final class id {
-<<<<<<< HEAD
-        public static final int btnCreateProduct=0x7f050013;
-        public static final int btnViewProducts=0x7f050016;
+        public static final int btnCreateProduct=0x7f050015;
+        public static final int btnViewProducts=0x7f050018;
         public static final int button_database=0x7f05000a;
-        public static final int button_enter=0x7f05000e;
-=======
->>>>>>> Load-screen
         public static final int button_maps=0x7f050007;
-        public static final int button_overzicht=0x7f05000b;
+        public static final int button_overzicht=0x7f05000c;
         public static final int hybrid=0x7f050004;
-<<<<<<< HEAD
-        public static final int hybrid_map=0x7f05001e;
+        public static final int hybrid_map=0x7f050020;
         public static final int imageView1=0x7f050005;
-        public static final int inputDesc=0x7f050012;
-        public static final int inputName=0x7f050010;
-        public static final int inputPrice=0x7f050011;
-        public static final int map=0x7f05000f;
-        public static final int map_types=0x7f05001a;
-        public static final int name=0x7f050015;
+        public static final int inputDesc=0x7f050014;
+        public static final int inputName=0x7f050012;
+        public static final int inputPrice=0x7f050013;
+        public static final int map=0x7f050011;
+        public static final int map_types=0x7f05001c;
+        public static final int name=0x7f050017;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
-        public static final int normal_map=0x7f05001b;
-        public static final int pid=0x7f050014;
+        public static final int normal_map=0x7f05001d;
+        public static final int pid=0x7f050016;
+        public static final int progressBar1=0x7f05000e;
         public static final int satellite=0x7f050002;
-        public static final int satellite_map=0x7f05001c;
+        public static final int satellite_map=0x7f05001e;
         public static final int terrain=0x7f050003;
-        public static final int terrain_map=0x7f05001d;
+        public static final int terrain_map=0x7f05001f;
         public static final int textView1=0x7f050009;
-        public static final int textView2=0x7f050008;
-        public static final int textView3=0x7f05000c;
-        public static final int textView4=0x7f05000d;
+        public static final int textView2=0x7f05000b;
         public static final int textView5=0x7f050006;
-        public static final int txtDate=0x7f050018;
-        public static final int txtDescription=0x7f050019;
-        public static final int txtTitle=0x7f050017;
-=======
-        public static final int hybrid_map=0x7f050013;
-        public static final int imageView1=0x7f050005;
-        public static final int map=0x7f05000e;
-        public static final int map_types=0x7f05000f;
-        public static final int none=0x7f050000;
-        public static final int normal=0x7f050001;
-        public static final int normal_map=0x7f050010;
-        public static final int progressBar1=0x7f05000b;
-        public static final int satellite=0x7f050002;
-        public static final int satellite_map=0x7f050011;
-        public static final int terrain=0x7f050003;
-        public static final int terrain_map=0x7f050012;
-        public static final int textView1=0x7f050009;
-        public static final int textView5=0x7f050006;
-        public static final int textView6=0x7f05000a;
-        public static final int txtvAPP=0x7f05000d;
-        public static final int txtvGoedDoel=0x7f05000c;
+        public static final int textView6=0x7f05000d;
+        public static final int txtDate=0x7f05001a;
+        public static final int txtDescription=0x7f05001b;
+        public static final int txtTitle=0x7f050019;
+        public static final int txtvAPP=0x7f050010;
+        public static final int txtvGoedDoel=0x7f05000f;
         public static final int txtvVersion=0x7f050008;
->>>>>>> Load-screen
     }
     public static final class layout {
         public static final int activity_intro=0x7f030000;
@@ -275,7 +253,7 @@ containing a value of this type.
         /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
          */
         public static final int auth_client_requested_by_msg=0x7f060011;
-        public static final int beschrijving=0x7f06002e;
+        public static final int beschrijving=0x7f06002d;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -331,33 +309,21 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f06000e;
-<<<<<<< HEAD
-        public static final int hello_world=0x7f060017;
-=======
->>>>>>> Load-screen
-        public static final int home_app=0x7f060020;
-        public static final int home_button=0x7f060023;
-        public static final int home_groep=0x7f06001e;
-        public static final int home_naam=0x7f06001f;
-        public static final int home_project=0x7f060022;
-        public static final int home_versie=0x7f060021;
-<<<<<<< HEAD
-        public static final int hybrid_map=0x7f06001c;
-        public static final int img_line=0x7f06001d;
-        public static final int intro_database=0x7f060027;
-        public static final int intro_intro=0x7f060025;
-        public static final int intro_maps=0x7f060026;
-        public static final int intro_overzicht=0x7f060028;
-        public static final int intro_welkom=0x7f060024;
-        public static final int locatie=0x7f06002d;
-=======
+        public static final int home_app=0x7f06001f;
+        public static final int home_button=0x7f060022;
+        public static final int home_groep=0x7f06001d;
+        public static final int home_naam=0x7f06001e;
+        public static final int home_project=0x7f060021;
+        public static final int home_versie=0x7f060020;
         public static final int hybrid_map=0x7f06001b;
-        public static final int img_line=0x7f06001d;
-        public static final int intro_intro=0x7f060025;
-        public static final int intro_maps=0x7f060026;
-        public static final int intro_welkom=0x7f060024;
-        public static final int loading=0x7f060027;
->>>>>>> Load-screen
+        public static final int img_line=0x7f06001c;
+        public static final int intro_database=0x7f060026;
+        public static final int intro_intro=0x7f060024;
+        public static final int intro_maps=0x7f060025;
+        public static final int intro_overzicht=0x7f060027;
+        public static final int intro_welkom=0x7f060023;
+        public static final int loading=0x7f06002e;
+        public static final int locatie=0x7f06002c;
         /**  Location client code resources (prefix with location_client) 
 
         Begin strings for location.reporting
@@ -369,22 +335,14 @@ containing a value of this type.
         public static final int location_client_ulr_inactive_age_under_13=0x7f060012;
         public static final int location_client_ulr_inactive_age_unknown=0x7f060013;
         public static final int location_client_ulr_inactive_unknown_restriction=0x7f060014;
-<<<<<<< HEAD
-        public static final int normal_map=0x7f060019;
-        public static final int rss_item_date=0x7f06002a;
-        public static final int rss_item_description=0x7f060029;
-        public static final int rss_item_title=0x7f06002b;
-        public static final int satellite_map=0x7f06001a;
-        public static final int select_map=0x7f060018;
-        public static final int terrain_map=0x7f06001b;
-        public static final int titel=0x7f06002c;
-=======
         public static final int normal_map=0x7f060018;
+        public static final int rss_item_date=0x7f060029;
+        public static final int rss_item_description=0x7f060028;
+        public static final int rss_item_title=0x7f06002a;
         public static final int satellite_map=0x7f060019;
         public static final int select_map=0x7f060017;
         public static final int terrain_map=0x7f06001a;
-        public static final int test=0x7f06001c;
->>>>>>> Load-screen
+        public static final int titel=0x7f06002b;
     }
     public static final class style {
         /** 

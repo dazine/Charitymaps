@@ -26,7 +26,6 @@
     <string name="intro_welkom">Welkom!</string>
     <string name="intro_intro">Welkom bij de App van de goede doelen.</string>
     <string name="intro_maps">Ga naar de Maps</string>
-<<<<<<< HEAD
     <string name="intro_database">Database</string>
     <string name="intro_overzicht">Laatste nieuws</string>
     <string name="rss_item_description">Description</string>
@@ -35,8 +34,6 @@
     <string name="titel">Titel</string>
     <string name="locatie">Locatie</string>
     <string name="beschrijving">Beschrijving</string>
-=======
     <string name="loading">Loading&#8230;</string>
->>>>>>> Load-screen
 
 </resources>
