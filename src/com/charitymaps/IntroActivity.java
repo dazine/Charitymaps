@@ -6,11 +6,45 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
-public class IntroActivity extends Activity implements View.OnClickListener {
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.widget.ShareActionProvider;
+
+public class IntroActivity extends SherlockActivity implements View.OnClickListener {
+
+	private ShareActionProvider mShareActionProvider;
 
 	Button button_maps;
 	Button button_database;
 	Button button_overzicht;
+	
+	 @Override
+	    public boolean onCreateOptionsMenu(Menu menu) {
+	        /** Inflating the current activity's menu with res/menu/items.xml */
+	        getSupportMenuInflater().inflate(R.menu.items, menu);
+	 
+	        /** Getting the actionprovider associated with the menu item whose id is share */
+	        mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share).getActionProvider();
+	 
+	        /** Getting the target intent */
+	        Intent intent = getDefaultShareIntent();
+	 
+	        /** Setting a share intent */
+	        if(intent!=null)
+	            mShareActionProvider.setShareIntent(intent);
+	        return super.onCreateOptionsMenu(menu);
+	 
+	    }
+	 
+	    /** Returns a share intent */
+	    private Intent getDefaultShareIntent(){
+	 
+	        Intent intent = new Intent(Intent.ACTION_SEND);
+	        intent.setType("text/plain");
+	        intent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
+	        intent.putExtra(Intent.EXTRA_TEXT,"Sample Content !!!");
+	        return intent;
+	    }
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +73,7 @@ public class IntroActivity extends Activity implements View.OnClickListener {
     		startActivity(new Intent(this, Overzicht.class));
     		break;
     	}
+    	
     }
+	
 }
