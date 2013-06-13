@@ -32,5 +32,8 @@
     <string name="rss_item_description">Description</string>
     <string name="rss_item_date">Date</string>
     <string name="rss_item_title">Title</string>
+    <string name="titel">Titel</string>
+    <string name="locatie">Locatie</string>
+    <string name="beschrijving">Beschrijving</string>
 
 </resources>

@@ -2,77 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/bg" >
     
     <!-- Name Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:text="@string/titel"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textColor="@color/blue"
+        android:textSize="22sp"/>
     
-    <!-- Input Name -->
+    <!-- Name -->
 	<TextView android:id="@+id/inputName"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_margin="5dip"
-	    android:layout_marginBottom="15dip"
+	    android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/white"
 	    android:singleLine="true"/>
 	
 	<!-- Price Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="@string/locatie"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textColor="@color/blue"
+        android:textSize="22sp"/>
     
-    <!-- Input Price -->
+    <!-- Price -->
 	<TextView android:id="@+id/inputPrice" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_margin="5dip"
-	    android:layout_marginBottom="15dip"
-	    android:singleLine="true"
-	    android:inputType="numberDecimal"/>
+	    android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/white"
+	    android:singleLine="true" />
 	
 	<!-- Description Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Description"
+        android:text="@string/beschrijving"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17sp"/>
+        android:textColor="@color/blue"
+        android:textSize="22sp"/>
     
-    <!-- Input description -->
+    <!-- description -->
 	<TextView android:id="@+id/inputDesc" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_margin="5dip"
-	    android:layout_marginBottom="15dip"
+	    android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
 	    android:lines="4"
+	    android:textColor="@color/white"
 	    android:gravity="top"/>
-	
-	<LinearLayout android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="horizontal">
-	    <!-- Button Create Product -->
-	<Button android:id="@+id/btnSave" 
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:text="Save Changes"
-	    android:layout_weight="1"/>
-	
-	<!-- Button Create Product -->
-	<Button android:id="@+id/btnDelete" 
-	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:text="Delete"
-	    android:layout_weight="1"/>	    
-	</LinearLayout>
 	
 </LinearLayout>
