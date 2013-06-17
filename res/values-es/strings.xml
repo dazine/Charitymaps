@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Charitymaps</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_map">Select map type</string>
+    <string name="normal_map">Normal map</string>
+    <string name="satellite_map">Satellite map</string>
+    <string name="terrain_map">Terrain map</string>
+    <string name="hybrid_map">Hybrid map</string>
+    <string name="share">Share</string>
+    
+    <color name="bg">#333333</color>
+    <color name="red">#ff4444</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#33b5e5</color>
+    <color name="grey">#999999</color>
+
+    <string name="img_line">gekleurde lijn</string>
+    <string name="home_groep">iCharIT (Groep C4)</string>
+    <string name="home_naam">Caridad</string>
+    <string name="home_app">APP</string>
+    <string name="home_versie">v0.1</string>
+    <string name="home_project">Informatica - projecto 4</string>
+    <string name="home_button">Sigue</string>
+    <string name="intro_welkom">Bienvenido</string>
+    <string name="intro_intro">Bienvenido al application de caridad CharityMaps</string>
+    <string name="intro_maps">Tarjetas</string>
+    <string name="intro_database">Database</string>
+    <string name="intro_overzicht">Ultimas informaciones</string>
+    <string name="rss_item_description">Descripcion</string>
+    <string name="rss_item_date">Fecha</string>
+    <string name="rss_item_title">Titulo</string>
+    <string name="titel">Titulo</string>
+    <string name="locatie">Locacion</string>
+    <string name="beschrijving">Descripcion</string>
+    <string name="loading">Cargando</string>
+
+</resources>
