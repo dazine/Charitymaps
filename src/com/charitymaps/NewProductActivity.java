@@ -81,6 +81,7 @@ public class NewProductActivity extends Activity {
 		/**
 		 * Creating product
 		 * */
+		@Override
 		protected String doInBackground(String... args) {
 			String name = inputName.getText().toString();
 			String price = inputPrice.getText().toString();
@@ -124,6 +125,7 @@ public class NewProductActivity extends Activity {
 		/**
 		 * After completing background task Dismiss the progress dialog
 		 * **/
+		@Override
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
 			pDialog.dismiss();

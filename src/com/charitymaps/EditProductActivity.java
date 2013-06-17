@@ -92,10 +92,12 @@ public class EditProductActivity extends Activity {
 		/**
 		 * Getting disaster details in background thread
 		 * */
+		@Override
 		protected String doInBackground(String... params) {
 
 			// updating UI from Background Thread
 			runOnUiThread(new Runnable() {
+				@Override
 				public void run() {
 					// Check for success tag
 					int success;
@@ -149,6 +151,7 @@ public class EditProductActivity extends Activity {
 		/**
 		 * After completing background task Dismiss the progress dialog
 		 * **/
+		@Override
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once got all details
 			pDialog.dismiss();
