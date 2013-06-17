@@ -18,7 +18,7 @@
     <color name="grey">#999999</color>
 
     <string name="img_line">gekleurde lijn</string>
-    <string name="home_groep">iCharIT (Groep C4)</string>
+    <string name="home_groep">Charity Maps (Groep C4)</string>
     <string name="home_naam">Goed doel</string>
     <string name="home_app">APP</string>
     <string name="home_versie">v0.1</string>
@@ -29,9 +29,15 @@
     <string name="intro_maps">Ga naar de Maps</string>
     <string name="intro_database">Database</string>
     <string name="intro_overzicht">Laatste nieuws</string>
+    <string name="intro_charity">Stichtingen</string>
+    
     <string name="rss_item_description">Description</string>
     <string name="rss_item_date">Date</string>
     <string name="rss_item_title">Title</string>
+    
+    <string name="database_date">Date</string>
+    <string name="database_location">Location</string>
+    
     <string name="titel">Titel</string>
     <string name="locatie">Locatie</string>
     <string name="beschrijving">Beschrijving</string>

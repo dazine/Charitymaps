@@ -64,22 +64,27 @@
             </intent-filter>
         </activity>
 
-        <!-- All Product Activity -->
+        <!-- All disaster Activity -->
         <activity
-            android:name=".AllProductsActivity"
-            android:label="All Products" >
+            android:name=".AllDisastersActivity"
+            android:label="Alle rampen" >
         </activity>
 
-        <!-- Add Product Activity -->
+        <!-- View disaster Activity -->
         <activity
-            android:name=".NewProductActivity"
-            android:label="Add New Product" >
+            android:name=".ViewDisasterActivity"
+            android:label="Ramp bekijken" >
+        </activity>
+        <!-- All charity Activity -->
+        <activity
+            android:name=".AllCharityActivity"
+            android:label="Alle stichtingen" >
         </activity>
 
-        <!-- Edit Product Activity -->
+        <!-- View charity Activity -->
         <activity
-            android:name=".EditProductActivity"
-            android:label="Edit Product" >
+            android:name=".ViewCharityActivity"
+            android:label="Stichting bekijken" >
         </activity>
         <activity
             android:name="com.charitymaps.MainScreenActivity" >

@@ -1,5 +1,11 @@
 package com.charitymaps;
 
+import java.util.HashMap;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
@@ -15,6 +21,14 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class GoogleMaps extends Activity {
     private GoogleMap googleMap;
     private int mapType = GoogleMap.MAP_TYPE_NORMAL;
+    
+    private static final String TAG_PID = "pid";
+	private static final String TAG_NAME = "name";
+	private static final String TAG_LAT = "lat";
+	private static final String TAG_LONG = "long";
+	
+	private JSONArray places;
+	private HashMap<String, String> mapPlaceToId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,6 +39,7 @@ public class GoogleMaps extends Activity {
         MapFragment mapFragment =  (MapFragment) fragmentManager.findFragmentById(R.id.map);
         googleMap = mapFragment.getMap();
 
+        /////////////////////// STANDAARD MARKERS ///////////////////////
         LatLng sfLatLng = new LatLng(37.7750, -122.4183);
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         googleMap.addMarker(new MarkerOptions()
@@ -38,14 +53,47 @@ public class GoogleMaps extends Activity {
                 .position(sLatLng)
                 .title("Sausalito")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
-
-
+        
+        LatLng cameraLatLng = new LatLng(0, 0);
+        
+        /////////////////////// DATABASE MARKERS ///////////////////////
+        /*LatLng cameraLatLng = new LatLng(0, 0);
+        try {
+			cameraLatLng = new LatLng(Double.parseDouble(places.getJSONObject(0).getString(TAG_LAT)),
+			Double.parseDouble(places.getJSONObject(0).getString(TAG_LONG)));
+			
+			for (int i = 0; i < places.length(); i++) {
+				JSONObject c = places.getJSONObject(i);
+				String title = c.getString(TAG_NAME);
+				String lat = c.getString(TAG_LAT);
+				String lon = c.getString(TAG_LONG);
+				String mid = c.getString(TAG_PID);
+				LatLng loc = new LatLng(0, 0);
+				try {
+					loc = new LatLng(Double.parseDouble(lat),Double.parseDouble(lon));
+				} catch (NumberFormatException nfe) {
+					continue;
+				}
+				mapPlaceToId.put(title, mid);
+				googleMap
+						.addMarker(new MarkerOptions()
+								.position(loc)
+								.title(title)
+								.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		*/
+        
+        
+        
         googleMap.getUiSettings().setCompassEnabled(true);
         googleMap.getUiSettings().setZoomControlsEnabled(true);
         googleMap.getUiSettings().setMyLocationButtonEnabled(true);
 
 
-        LatLng cameraLatLng = sfLatLng;
+        //LatLng cameraLatLng = sfLatLng;
         float cameraZoom = 10;
 
         if(savedInstanceState != null){

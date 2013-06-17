@@ -17,6 +17,7 @@ public class IntroActivity extends SherlockActivity implements View.OnClickListe
 	Button button_maps;
 	Button button_database;
 	Button button_overzicht;
+	Button button_charity;
 	
 	 @Override
 	    public boolean onCreateOptionsMenu(Menu menu) {
@@ -58,6 +59,9 @@ public class IntroActivity extends SherlockActivity implements View.OnClickListe
         
         button_overzicht = (Button) findViewById(R.id.button_overzicht);
         button_overzicht.setOnClickListener(this);
+        
+        button_charity = (Button) findViewById(R.id.button_charity);
+        button_charity.setOnClickListener(this);
 	}
 
 	@Override
@@ -67,13 +71,14 @@ public class IntroActivity extends SherlockActivity implements View.OnClickListe
     		startActivity(new Intent("com.charitymaps.MainActivity"));
     		break;
     	case R.id.button_database:
-    		startActivity(new Intent(this, AllProductsActivity.class));
+    		startActivity(new Intent(this, AllDisastersActivity.class));
     		break;
     	case R.id.button_overzicht:
     		startActivity(new Intent(this, Overzicht.class));
     		break;
-    	}
-    	
-    }
-	
+	   case R.id.button_charity:
+			startActivity(new Intent(this, AllCharityActivity.class));
+			break;
+		}
+	}
 }

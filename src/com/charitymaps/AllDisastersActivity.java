@@ -25,7 +25,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-public class AllProductsActivity extends ListActivity {
+public class AllDisastersActivity extends ListActivity {
 
 	// Progress Dialog
 	private ProgressDialog pDialog;
@@ -43,6 +43,7 @@ public class AllProductsActivity extends ListActivity {
 	private static final String TAG_DISASTERS = "disasters";
 	private static final String TAG_PID = "pid";
 	private static final String TAG_NAME = "name";
+	private static final String TAG_LOCATION = "location";
 
 	// disasters JSONArray
 	JSONArray disasters = null;
@@ -69,12 +70,11 @@ public class AllProductsActivity extends ListActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// getting values from selected ListItem
-				String pid = ((TextView) view.findViewById(R.id.pid)).getText()
-						.toString();
+				String pid = ((TextView) view.findViewById(R.id.pid)).getText().toString();
 
 				// Starting new intent
 				Intent in = new Intent(getApplicationContext(),
-						EditProductActivity.class);
+						ViewDisasterActivity.class);
 				// sending pid to next activity
 				in.putExtra(TAG_PID, pid);
 				
@@ -112,7 +112,7 @@ public class AllProductsActivity extends ListActivity {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			pDialog = new ProgressDialog(AllProductsActivity.this);
+			pDialog = new ProgressDialog(AllDisastersActivity.this);
 			pDialog.setMessage("Loading, please wait...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(false);
@@ -147,6 +147,7 @@ public class AllProductsActivity extends ListActivity {
 						// Storing each json item in variable
 						String id = c.getString(TAG_PID);
 						String name = c.getString(TAG_NAME);
+						String location = c.getString(TAG_LOCATION);
 
 						// creating new HashMap
 						HashMap<String, String> map = new HashMap<String, String>();
@@ -154,18 +155,11 @@ public class AllProductsActivity extends ListActivity {
 						// adding each child node to HashMap key => value
 						map.put(TAG_PID, id);
 						map.put(TAG_NAME, name);
+						map.put(TAG_LOCATION, location);
 
 						// adding HashList to ArrayList
 						disastersList.add(map);
 					}
-				} else {
-					// no disaster found
-					// Launch Add New product Activity
-					Intent i = new Intent(getApplicationContext(),
-							NewProductActivity.class);
-					// Closing all previous activities
-					i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-					startActivity(i);
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -187,10 +181,9 @@ public class AllProductsActivity extends ListActivity {
 					 * Updating parsed JSON data into ListView
 					 * */
 					ListAdapter adapter = new SimpleAdapter(
-							AllProductsActivity.this, disastersList,
-							R.layout.list_item, new String[] { TAG_PID,
-									TAG_NAME},
-							new int[] { R.id.pid, R.id.name });
+							AllDisastersActivity.this, disastersList,
+							R.layout.list_item, new String[] { TAG_PID,TAG_NAME,TAG_LOCATION},
+							new int[] { R.id.pid, R.id.name, R.id.databaseLocation });
 					// updating listview
 					setListAdapter(adapter);
 				}

@@ -21,7 +21,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class EditProductActivity extends Activity {
+public class ViewDisasterActivity extends Activity {
 
 	TextView txtName;
 	TextView txtLocation;
@@ -82,7 +82,7 @@ public class EditProductActivity extends Activity {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			pDialog = new ProgressDialog(EditProductActivity.this);
+			pDialog = new ProgressDialog(ViewDisasterActivity.this);
 			pDialog.setMessage("Loading, please wait...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
