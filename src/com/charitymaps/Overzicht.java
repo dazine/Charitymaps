@@ -13,15 +13,12 @@ import org.xml.sax.XMLReader;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
  
 public class Overzicht extends ListActivity {
@@ -135,7 +132,8 @@ private class RSSListAdaptor extends ArrayAdapter<RSSItem>{
                     return ((null != objects) ? objects.get(position) : null);
             }
              
-            public View getView(int position, View convertView, ViewGroup parent) {
+            @Override
+			public View getView(int position, View convertView, ViewGroup parent) {
                     View view = convertView;
                      
                     if(null == view)
