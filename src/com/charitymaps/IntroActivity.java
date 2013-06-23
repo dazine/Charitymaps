@@ -41,8 +41,8 @@ public class IntroActivity extends SherlockActivity implements View.OnClickListe
 	 
 	        Intent intent = new Intent(Intent.ACTION_SEND);
 	        intent.setType("text/plain");
-	        intent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
-	        intent.putExtra(Intent.EXTRA_TEXT,"Sample Content !!!");
+	        intent.putExtra(Intent.EXTRA_SUBJECT, "Charitymaps");
+	        intent.putExtra(Intent.EXTRA_TEXT,"Probeer nu Charitymaps http://www.gowithus.nl/projects/android");
 	        return intent;
 	    }
 	
