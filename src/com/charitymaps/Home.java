@@ -9,22 +9,14 @@ import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.ShareActionProvider;
 import android.widget.Toast;
 
-import android.widget.Button;
-
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.widget.*;
-import com.actionbarsherlock.*;
-
-public class Home extends SherlockActivity  implements View.OnClickListener {
+public class Home extends Activity {
 
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
@@ -38,9 +30,9 @@ public class Home extends SherlockActivity  implements View.OnClickListener {
 	private int laatsteNieuws = 2;
 	private int Stichtingen = 3;
 
-	private ShareActionProvider mShareActionProvider;
+	//private ShareActionProvider mShareActionProvider;
 
-	@Override
+	/*@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getSupportMenuInflater().inflate(R.menu.items, menu);
 
@@ -53,8 +45,8 @@ public class Home extends SherlockActivity  implements View.OnClickListener {
 			mShareActionProvider.setShareIntent(intent);
 		return super.onCreateOptionsMenu(menu);
 
-	}
-
+	}*/
+	/*
 	private Intent getDefaultShareIntent() {
 
 		Intent intent = new Intent(Intent.ACTION_SEND);
@@ -64,7 +56,7 @@ public class Home extends SherlockActivity  implements View.OnClickListener {
 				"Probeer nu Charitymaps http://www.gowithus.nl/projects/android");
 		return intent;
 	}
-
+	*/
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -184,11 +176,5 @@ public class Home extends SherlockActivity  implements View.OnClickListener {
 	private void showNoInternet() {
 		Toast.makeText(getApplicationContext(),
 				getString(R.string.no_internet), Toast.LENGTH_SHORT).show();
-	}
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
 	}
 }
