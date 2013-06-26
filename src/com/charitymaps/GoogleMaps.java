@@ -152,4 +152,5 @@ public class GoogleMaps extends Activity {
         outState.putDouble("lng", cameraLatLng.longitude);
         outState.putFloat("zoom", cameraZoom);
     }
+    
 }
