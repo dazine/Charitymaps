@@ -8,9 +8,6 @@
 package com.charitymaps;
 
 public final class R {
-    public static final class array {
-        public static final int main_menu_items=0x7f0b0000;
-    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1121,48 +1118,51 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040017;
         public static final int abs__title=0x7f04001f;
         public static final int abs__up=0x7f04000b;
-        public static final int btnCreateProduct=0x7f040042;
-        public static final int btnViewProducts=0x7f040049;
-        public static final int databaseLocation=0x7f040048;
+        public static final int btnCreateProduct=0x7f040047;
+        public static final int btnViewProducts=0x7f04004c;
+        public static final int button_charity=0x7f04003e;
+        public static final int button_database=0x7f04003b;
+        public static final int button_maps=0x7f040038;
+        public static final int button_overzicht=0x7f04003d;
+        public static final int databaseLocation=0x7f04004b;
         public static final int disableHome=0x7f040009;
-        public static final int drawer_layout=0x7f040044;
         public static final int edit_query=0x7f04002a;
         public static final int homeAsUp=0x7f040006;
         public static final int hybrid=0x7f040013;
-        public static final int hybrid_map=0x7f040052;
-        public static final int imageView1=0x7f040037;
-        public static final int inputDesc=0x7f040041;
-        public static final int inputLocation=0x7f040043;
-        public static final int inputName=0x7f04003f;
-        public static final int inputPrice=0x7f040040;
-        public static final int left_drawer=0x7f040045;
+        public static final int hybrid_map=0x7f040055;
+        public static final int imageView1=0x7f040036;
+        public static final int inputDesc=0x7f040046;
+        public static final int inputLocation=0x7f040048;
+        public static final int inputName=0x7f040044;
+        public static final int inputPrice=0x7f040045;
         public static final int listMode=0x7f040002;
-        public static final int map=0x7f04003e;
-        public static final int map_types=0x7f04004e;
-        public static final int name=0x7f040047;
+        public static final int map=0x7f040043;
+        public static final int map_types=0x7f040051;
+        public static final int name=0x7f04004a;
         public static final int none=0x7f040010;
         public static final int normal=0x7f040001;
-        public static final int normal_map=0x7f04004f;
-        public static final int pid=0x7f040046;
-        public static final int progressBar1=0x7f040039;
+        public static final int normal_map=0x7f040052;
+        public static final int pid=0x7f040049;
+        public static final int progressBar1=0x7f040040;
         public static final int satellite=0x7f040011;
-        public static final int satellite_map=0x7f040050;
-        public static final int share=0x7f04004d;
+        public static final int satellite_map=0x7f040053;
+        public static final int share=0x7f040050;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
         public static final int terrain=0x7f040012;
-        public static final int terrain_map=0x7f040051;
-        public static final int textView1=0x7f04003d;
-        public static final int textView5=0x7f040036;
-        public static final int textView6=0x7f040038;
-        public static final int txtDate=0x7f04004b;
-        public static final int txtDescription=0x7f04004c;
-        public static final int txtTitle=0x7f04004a;
-        public static final int txtvAPP=0x7f04003c;
-        public static final int txtvGoedDoel=0x7f04003b;
-        public static final int txtvVersion=0x7f04003a;
+        public static final int terrain_map=0x7f040054;
+        public static final int textView1=0x7f04003a;
+        public static final int textView2=0x7f04003c;
+        public static final int textView5=0x7f040037;
+        public static final int textView6=0x7f04003f;
+        public static final int txtDate=0x7f04004e;
+        public static final int txtDescription=0x7f04004f;
+        public static final int txtTitle=0x7f04004d;
+        public static final int txtvAPP=0x7f040042;
+        public static final int txtvGoedDoel=0x7f040041;
+        public static final int txtvVersion=0x7f040039;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -1191,25 +1191,24 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int activity_main=0x7f030015;
-        public static final int activity_maps=0x7f030016;
-        public static final int add_product=0x7f030017;
-        public static final int all_charity=0x7f030018;
-        public static final int all_disasters=0x7f030019;
-        public static final int drawer_list_item=0x7f03001a;
+        public static final int activity_intro=0x7f030015;
+        public static final int activity_main=0x7f030016;
+        public static final int activity_maps=0x7f030017;
+        public static final int add_product=0x7f030018;
+        public static final int all_charity=0x7f030019;
+        public static final int all_disasters=0x7f03001a;
         public static final int edit_charity=0x7f03001b;
         public static final int edit_disaster=0x7f03001c;
-        public static final int home=0x7f03001d;
-        public static final int list_item=0x7f03001e;
-        public static final int main_screen=0x7f03001f;
-        public static final int overzicht=0x7f030020;
-        public static final int rssitemview=0x7f030021;
-        public static final int sherlock_spinner_dropdown_item=0x7f030022;
-        public static final int sherlock_spinner_item=0x7f030023;
+        public static final int list_item=0x7f03001d;
+        public static final int main_screen=0x7f03001e;
+        public static final int overzicht=0x7f03001f;
+        public static final int rssitemview=0x7f030020;
+        public static final int sherlock_spinner_dropdown_item=0x7f030021;
+        public static final int sherlock_spinner_item=0x7f030022;
     }
     public static final class menu {
-        public static final int items=0x7f0c0000;
-        public static final int main=0x7f0c0001;
+        public static final int items=0x7f0b0000;
+        public static final int main=0x7f0b0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1320,8 +1319,6 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f09001b;
         public static final int database_date=0x7f09003a;
         public static final int database_location=0x7f09003b;
-        public static final int drawer_close=0x7f090041;
-        public static final int drawer_open=0x7f090040;
         public static final int home_app=0x7f09002d;
         public static final int home_button=0x7f090030;
         public static final int home_groep=0x7f09002b;
@@ -1349,7 +1346,6 @@ containing a value of this type.
         public static final int location_client_ulr_inactive_age_under_13=0x7f09001f;
         public static final int location_client_ulr_inactive_age_unknown=0x7f090020;
         public static final int location_client_ulr_inactive_unknown_restriction=0x7f090021;
-        public static final int no_internet=0x7f090042;
         public static final int normal_map=0x7f090025;
         public static final int rss_item_date=0x7f090038;
         public static final int rss_item_description=0x7f090037;

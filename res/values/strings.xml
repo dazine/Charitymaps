@@ -9,7 +9,7 @@
     <string name="terrain_map">Terrain map</string>
     <string name="hybrid_map">Hybrid map</string>
     <string name="share">Share</string>
-
+    
     <color name="bg">#333333</color>
     <color name="red">#ff4444</color>
     <color name="white">#ffffff</color>
@@ -30,24 +30,17 @@
     <string name="intro_database">Rampen</string>
     <string name="intro_overzicht">Laatste nieuws</string>
     <string name="intro_charity">Stichtingen</string>
+    
     <string name="rss_item_description">Description</string>
     <string name="rss_item_date">Date</string>
     <string name="rss_item_title">Title</string>
+    
     <string name="database_date">Date</string>
     <string name="database_location">Location</string>
+    
     <string name="titel">Titel</string>
     <string name="locatie">Locatie</string>
     <string name="beschrijving">Beschrijving</string>
     <string name="loading">Loading&#8230;</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="no_internet">Geen internet verbinding</string>
-
-    <string-array name="main_menu_items">
-        <item>De Kaart</item>
-        <item>Rampen</item>
-        <item>Laatste Nieuws</item>
-        <item>Stichtingen</item>
-    </string-array>
 
 </resources>
