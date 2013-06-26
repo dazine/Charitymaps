@@ -18,7 +18,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class ViewCharityActivity extends Activity {
@@ -90,10 +89,12 @@ public class ViewCharityActivity extends Activity {
 		/**
 		 * Getting charity details in background thread
 		 * */
+		@Override
 		protected String doInBackground(String... params) {
 
 			// updating UI from Background Thread
 			runOnUiThread(new Runnable() {
+				@Override
 				public void run() {
 					// Check for success tag
 					int success;
@@ -145,6 +146,7 @@ public class ViewCharityActivity extends Activity {
 		/**
 		 * After completing background task Dismiss the progress dialog
 		 * **/
+		@Override
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once got all details
 			pDialog.dismiss();

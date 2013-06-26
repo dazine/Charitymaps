@@ -70,14 +70,15 @@ public class AllDisastersActivity extends ListActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// getting values from selected ListItem
-				String pid = ((TextView) view.findViewById(R.id.pid)).getText().toString();
+				String pid = ((TextView) view.findViewById(R.id.pid)).getText()
+						.toString();
 
 				// Starting new intent
 				Intent in = new Intent(getApplicationContext(),
 						ViewDisasterActivity.class);
 				// sending pid to next activity
 				in.putExtra(TAG_PID, pid);
-				
+
 				// starting new activity and expecting some response back
 				startActivityForResult(in, 100);
 			}
@@ -91,7 +92,7 @@ public class AllDisastersActivity extends ListActivity {
 		super.onActivityResult(requestCode, resultCode, data);
 		// if result code 100
 		if (resultCode == 100) {
-			// if result code 100 is received 
+			// if result code 100 is received
 			// means user edited/deleted disaster
 			// reload this screen again
 			Intent intent = getIntent();
@@ -127,8 +128,9 @@ public class AllDisastersActivity extends ListActivity {
 			// Building Parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			// getting JSON string from URL
-			JSONObject json = jParser.makeHttpRequest(url_all_disasters, "GET", params);
-			
+			JSONObject json = jParser.makeHttpRequest(url_all_disasters, "GET",
+					params);
+
 			// Check your log cat for JSON reponse
 			Log.d("All Disasters: ", json.toString());
 
@@ -185,8 +187,10 @@ public class AllDisastersActivity extends ListActivity {
 					 * */
 					ListAdapter adapter = new SimpleAdapter(
 							AllDisastersActivity.this, disastersList,
-							R.layout.list_item, new String[] { TAG_PID,TAG_NAME,TAG_LOCATION},
-							new int[] { R.id.pid, R.id.name, R.id.databaseLocation });
+							R.layout.list_item, new String[] { TAG_PID,
+									TAG_NAME, TAG_LOCATION },
+							new int[] { R.id.pid, R.id.name,
+									R.id.databaseLocation });
 					// updating listview
 					setListAdapter(adapter);
 				}

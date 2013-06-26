@@ -3,9 +3,6 @@ package com.charitymaps;
 import java.util.HashMap;
 
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
@@ -155,4 +152,5 @@ public class GoogleMaps extends Activity {
         outState.putDouble("lng", cameraLatLng.longitude);
         outState.putFloat("zoom", cameraZoom);
     }
+    
 }

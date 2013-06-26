@@ -39,7 +39,7 @@ public class Head extends Activity {
 			}
 			
 			//start main activity
-			Intent intent = new Intent(Head.this, IntroActivity.class);
+			Intent intent = new Intent(Head.this, Home.class);
 			Head.this.startActivity(intent);
 			Head.this.finish();
 		}
