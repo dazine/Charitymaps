@@ -52,6 +52,9 @@ public class AllDisastersActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_disasters);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setHomeButtonEnabled(true);
 
 		// Hashmap for ListView
 		disastersList = new ArrayList<HashMap<String, String>>();

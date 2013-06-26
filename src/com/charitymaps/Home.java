@@ -30,33 +30,6 @@ public class Home extends Activity {
 	private int laatsteNieuws = 2;
 	private int Stichtingen = 3;
 
-	//private ShareActionProvider mShareActionProvider;
-
-	/*@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.items, menu);
-
-		mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share)
-				.getActionProvider();
-
-		Intent intent = getDefaultShareIntent();
-
-		if (intent != null)
-			mShareActionProvider.setShareIntent(intent);
-		return super.onCreateOptionsMenu(menu);
-
-	}*/
-	/*
-	private Intent getDefaultShareIntent() {
-
-		Intent intent = new Intent(Intent.ACTION_SEND);
-		intent.setType("text/plain");
-		intent.putExtra(Intent.EXTRA_SUBJECT, "Charitymaps");
-		intent.putExtra(Intent.EXTRA_TEXT,
-				"Probeer nu Charitymaps http://www.gowithus.nl/projects/android");
-		return intent;
-	}
-	*/
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

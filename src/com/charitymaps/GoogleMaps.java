@@ -1,31 +1,26 @@
 package com.charitymaps;
 
-import java.util.HashMap;
-
-import org.json.JSONArray;
 import android.app.Activity;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class GoogleMaps extends Activity {
+public class GoogleMaps extends Activity implements OnMarkerClickListener {
     private GoogleMap googleMap;
     private int mapType = GoogleMap.MAP_TYPE_NORMAL;
     
     private static final String TAG_PID = "pid";
-	private static final String TAG_NAME = "name";
-	private static final String TAG_LAT = "lat";
-	private static final String TAG_LONG = "long";
-	
-	private JSONArray places;
-	private HashMap<String, String> mapPlaceToId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,20 +31,7 @@ public class GoogleMaps extends Activity {
         MapFragment mapFragment =  (MapFragment) fragmentManager.findFragmentById(R.id.map);
         googleMap = mapFragment.getMap();
 
-        /////////////////////// STANDAARD MARKERS ///////////////////////
-        LatLng sfLatLng = new LatLng(37.7750, -122.4183);
-        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        googleMap.addMarker(new MarkerOptions()
-                .position(sfLatLng)
-                .title("San Francisco")
-                .snippet("Population: 776733")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-
-        LatLng sLatLng = new LatLng(37.857236, -122.486916);
-        googleMap.addMarker(new MarkerOptions()
-                .position(sLatLng)
-                .title("Sausalito")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
+        setUpMap();
         
         LatLng cameraLatLng = new LatLng(0, 0);
         
@@ -151,6 +133,41 @@ public class GoogleMaps extends Activity {
         outState.putDouble("lat", cameraLatLng.latitude);
         outState.putDouble("lng", cameraLatLng.longitude);
         outState.putFloat("zoom", cameraZoom);
+    }
+    private Marker myMarker;    
+
+    private void setUpMap()
+    {
+        googleMap.setOnMarkerClickListener(this);
+        LatLng sfLatLng = new LatLng(37.7750, -122.4183);
+        myMarker = googleMap.addMarker(new MarkerOptions()
+                    .position(sfLatLng)
+                    .title("My Spot")
+                    .snippet("This is my spot!")
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        
+        LatLng sLatLng = new LatLng(37.857236, -122.486916);
+        googleMap.addMarker(new MarkerOptions()
+                .position(sLatLng)
+                .title("Sausalito")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
+    }
+
+    @Override
+    public boolean onMarkerClick(final Marker marker) {
+    	String pid = null;
+        if (marker.equals(myMarker)) 
+        {
+    				pid = "1";  
+    			}
+        // Starting new intent
+   		Intent in = new Intent(getApplicationContext(),ViewDisasterActivity.class);
+   		// sending pid to next activity
+   		in.putExtra(TAG_PID, pid);
+
+   		// starting new activity and expecting some response back
+   		startActivityForResult(in, 100);
+        return true;
     }
     
 }

@@ -13,12 +13,15 @@ import org.xml.sax.XMLReader;
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class Overzicht extends ListActivity {
@@ -36,16 +39,16 @@ public class Overzicht extends ListActivity {
 		new RetrieveRSSFeeds().execute();
 	}
 
-	/*
-	 * @Override protected void onListItemClick(ListView l, View v, int
-	 * position, long id) { super.onListItemClick(l, v, position, id);
-	 * 
-	 * RSSItem data = itemlist.get(position);
-	 * 
-	 * Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(data.link));
-	 * 
-	 * startActivity(intent); }
-	 */
+	
+	  @Override protected void onListItemClick(ListView l, View v, int
+	  position, long id) { super.onListItemClick(l, v, position, id);
+	  
+	  RSSItem data = itemlist.get(position);
+	  
+	  Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse(data.link));
+	  
+	  startActivity(intent); }
+	 
 
 	private void retrieveRSSFeed(String urlToRssFeed, ArrayList<RSSItem> list) {
 		try {
@@ -149,7 +152,7 @@ public class Overzicht extends ListActivity {
 						.findViewById(R.id.txtDescription);
 
 				title.setText(data.title);
-				date.setText("on " + data.date);
+				date.setText(data.date);
 				description.setText(data.description);
 			}
 
